@@ -17,7 +17,7 @@ export class HomePage {
 
 	submitAttempt: boolean = false;
 
-	constructor(public formBuilder: FormBuilder) {
+	constructor(public navCtrl: NavController, public formBuilder: FormBuilder) {
 
 	    this.slideOneForm = formBuilder.group({
 			firstName: ['', Validators.compose([Validators.maxLength(30), Validators.pattern('[a-zA-Z ]*'), Validators.required])],
